@@ -1,20 +1,29 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta charset="utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
     <script src="../Scripts/jquery-2.2.3.min.js"></script>
-    <script src="Scripts/main.js"></script>
+    <script src="../Scripts/main.js"></script>
+    <!--<script>
+        $(document).ready(
+            function () {
+                github.RepositoryInfo.RenderRepositories();
+            }
+            );
+    </script>-->
+
 </head>
 <body>
-    <div >
-        <div style="position:center">
+    <div>
+        <div>
             <h1>Search GitHub Repositories</h1>
         </div>
+        <form>
+            <input type="text" id="#SearchInput" />
+            <input type="button" value="Search" id="Search" onclick="github.RepositoryInfo.RenderRepositories()" />
+        </form>
     </div>
-    <form>
-        <input type="text"/>
-        <input type="submit" value="Search" />
-    </form>
+    <div class="table" id="Output"></div>
 </body>
 </html>

@@ -1,10 +1,14 @@
+/// <reference path="../scripts/typings/jquery/jquery.d.ts" />
 var github;
 (function (github) {
     var RepositoryInfo = (function () {
         function RepositoryInfo() {
         }
         RepositoryInfo.RenderRepositories = function () {
-            var url = "https://api.github.com/";
+            var input = $("#SearchInput").val();
+            var test = "";
+            console.log(input);
+            var url = "https://api.github.com/search/repositories?q=" + input;
             $.getJSON(url, function (data) {
                 //success
                 console.log(data);
@@ -18,3 +22,4 @@ var github;
     }());
     github.RepositoryInfo = RepositoryInfo;
 })(github || (github = {}));
+//# sourceMappingURL=main.js.map
