@@ -3,7 +3,10 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <script src="Scripts/main.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script><script src="Scripts/main.js"></script>
+    <link href="CSS/StyleSheet1.css" rel="stylesheet" />
 </head>
 <body>
     <h2>Assignment 9</h2>
@@ -25,6 +28,8 @@
             <label for="exampleInputImageUrl">ImageUrl</label>
             <input type="text" class="form-control" id="imageUrl" value="http://www.brunningonline.net/simon/blog/archives/South%20Park%20Avatar.jpg" placeholder="http://server/image.png" />
         </div>
+        <button type="button" id="addContact" class="btn btn-default">Add Contact</button>
     </form>
+    <div id="results" class="clearfix"></div>
 </body>
 </html>

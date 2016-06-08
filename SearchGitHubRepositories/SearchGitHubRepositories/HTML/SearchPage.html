@@ -3,16 +3,10 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <script src="../Scripts/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--<script src="../Scripts/jquery-2.2.3.min.js"></script>-->
     <script src="../Scripts/main.js"></script>
-    <!--<script>
-        $(document).ready(
-            function () {
-                github.RepositoryInfo.RenderRepositories();
-            }
-            );
-    </script>-->
-
+    <link href="../CSS/StyleSheet1.css" rel="stylesheet" />
 </head>
 <body>
     <div>
@@ -20,10 +14,19 @@
             <h1>Search GitHub Repositories</h1>
         </div>
         <form>
-            <input type="text" id="#SearchInput" />
+            <input type="text" id="SearchInput" />
             <input type="button" value="Search" id="Search" onclick="github.RepositoryInfo.RenderRepositories()" />
         </form>
     </div>
+
+    <!--<form class="form-inline">
+        <div class="form-group">
+
+        </div>
+    </form>-->
     <div class="table" id="Output"></div>
+<div id="result" class="clearfix">
+
+</div>
 </body>
 </html>

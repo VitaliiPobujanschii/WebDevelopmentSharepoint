@@ -1,6 +1,6 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "compileOnSave": true,
     "noEmitOnError": true,
     "noImplicitAny": false,
     "outFile": "./Scripts/main.js",
@@ -8,15 +8,13 @@
     "sourceMap": true,
     "target": "es5"
   },
-  
+
   "exclude": [
     "node_modules",
     "wwwroot"
   ],
   "files": [
-    //"./Scripts/typings/jquery/jquery.d.ts",
+    "./Scripts/typings/jquery/jquery.d.ts",
     "./TsSource/GetRepo.ts"
-
-
   ]
 }

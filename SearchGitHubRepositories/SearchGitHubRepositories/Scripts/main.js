@@ -6,9 +6,6 @@ var github;
         }
         RepositoryInfo.RenderRepositories = function () {
             var input = $("#SearchInput").val();
-            console.log("Hej");
-            console.log(input);
-            console.log("HejDå");
             var url = "https://api.github.com/search/repositories?q=" + input;
             $.getJSON(url, function (data) {
                 //success
@@ -20,7 +17,7 @@ var github;
                     console.log(repo.name);
                     var RepoName = repo.name;
                     var RepoOwner = repo.owner.login;
-                    var html = "<div>" + RepoName + "</div>";
+                    var html = "<div class='infobox'>" + "<h4>Name of repository:</h4> " + RepoName + " <h4>Owner:</h4> " + RepoOwner + "</div>";
                     // create jquery object of our new element
                     var jqueryObject = $(html);
                     // add object to the page

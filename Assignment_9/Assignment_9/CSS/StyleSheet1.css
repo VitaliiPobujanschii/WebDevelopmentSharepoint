@@ -1,0 +1,12 @@
+﻿
+
+.contactbubble{
+    width: 200px;
+    padding: 25px;
+    border: 2px solid navy;
+    margin: 25px;
+    float:left;
+}
+img {
+    height:100px;
+}

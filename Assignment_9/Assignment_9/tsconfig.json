@@ -1,0 +1,19 @@
+{
+ "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outFile": "./Scripts/main.js"
+  },"files": [
+    "./TypeScript/Init.ts",
+    "./TypeScript/Contact.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+  
+}
