@@ -9,12 +9,12 @@ namespace github {
 
             var url = "https://api.github.com/search/repositories?q=" + input;
 
-            
+
             $.getJSON(url,
                 function (data) {
-                //success
+                    //success
                     console.log(data);
-                    var repos= data.items;
+                    var repos = data.items;
                     var divOutput = $('#Output');
 
                     // foreach(var repo in repos)
@@ -22,7 +22,15 @@ namespace github {
                         console.log(repo.name);
                         var RepoName = repo.name;
                         var RepoOwner = repo.owner.login;
-                        var html = "<div class='infobox'>" + "<h4>Name of repository:</h4> " + RepoName + " <h4>Owner:</h4> " + RepoOwner + "</div>";
+                        var RepoNumOfForks = repo.forks;
+                        var RepoNumOfWatchers = repo.watchers;
+                        var RepoURL = "'https://github.com/'+ RepoOwner + '/' + RepoName";
+                        var html = "<div class='infobox'>"
+                            + "</p><b>Repository: </b>" + "<a href='https://github.com/  ' >" + RepoName + "</a>" + "</p>"
+                                    + "<p><b>Owner: </b>" + RepoOwner + "</p>"
+                                    + "<p><b>Forks: </b> " + RepoNumOfForks + "</p>"
+                                    + "<p><b>Watchers: </b> " + RepoNumOfWatchers + "</p>"
+                                    + "</div>";
 
                         // create jquery object of our new element
                         var jqueryObject = $(html);
