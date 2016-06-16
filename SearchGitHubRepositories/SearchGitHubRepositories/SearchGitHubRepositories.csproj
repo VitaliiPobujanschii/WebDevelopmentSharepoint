@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="HTML\RepositoryPage.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <None Include="Web.Debug.config">
@@ -118,10 +119,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="TsSource\AutoComplete.ts" />
     <TypeScriptCompile Include="TsSource\GetRepo.ts">
       <BrowseToURL>pp</BrowseToURL>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="TsSource\RepositoryPage.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

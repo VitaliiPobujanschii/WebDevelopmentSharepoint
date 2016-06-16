@@ -15,6 +15,8 @@
   ],
   "files": [
     "./Scripts/typings/jquery/jquery.d.ts",
-    "./TsSource/GetRepo.ts"
+    "./TsSource/GetRepo.ts",
+    "./TsSource/AutoComplete.ts",
+    "./TsSource/RepositoryPage.ts"
   ]
 }
